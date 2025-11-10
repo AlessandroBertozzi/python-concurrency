@@ -1,6 +1,8 @@
 # Fibonacci Concurrency Test
 
-Test di prestazioni per diversi approcci di concorrenza in Python con server Fibonacci.
+Performance testing for different Python concurrency approaches using Fibonacci calculation servers.
+
+Based on the article: [Python Concurrency: The Definitive Guide](https://newvick.com/posts/python-concurrency/)
 
 ## Setup
 
@@ -8,28 +10,28 @@ Test di prestazioni per diversi approcci di concorrenza in Python con server Fib
 source venv/bin/activate
 ```
 
-## Server disponibili
+## Available servers
 
 ```bash
-python server.py                    # Sequenziale
-python server_with_thread.py        # Multi-thread
+python server.py                    # Sequential
+python server_with_thread.py        # Multi-threaded
 python server_with_processes.py     # Process pool (concurrent.futures)
 python server_with_asyncio.py       # Asyncio
-python server_with_multiprocess.py  # Multi-process (processo per connessione)
+python server_with_multiprocess.py  # Multi-process (process per connection)
 python server_with_mp_pool.py       # Multi-process pool
-python server_with_mp_queue.py      # Multi-process con code
+python server_with_mp_queue.py      # Multi-process with queues
 ```
 
-## Test di performance
+## Performance tests
 
 ```bash
-python perf1.py      # Test tempo di risposta (Fibonacci 30)
-python perf2.py      # Test throughput (Fibonacci 1)
-python benchmark.py  # Benchmark completo
+python perf1.py      # Response time test (Fibonacci 30)
+python perf2.py      # Throughput test (Fibonacci 1)
+python benchmark.py  # Complete benchmark
 ```
 
-## Protocollo
+## Protocol
 
-- Porta: localhost:25000
-- Input: numero Fibonacci come ASCII
-- Output: risultato come ASCII + newline
+- Port: localhost:25000
+- Input: Fibonacci number as ASCII
+- Output: result as ASCII + newline

@@ -2,7 +2,7 @@
 
 Performance testing for different Python concurrency approaches using Fibonacci calculation servers.
 
-Based on the article: [Python Concurrency: The Definitive Guide](https://newvick.com/posts/python-concurrency/)
+Based on the article: [Python Concurrency: Threads, Processes, and asyncio Explained](https://newvick.com/posts/python-concurrency/)
 
 ## Setup
 
